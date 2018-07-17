@@ -228,6 +228,34 @@
           }
         }
       }
+    },
+    "container": {
+      "root": "libs/container",
+      "sourceRoot": "libs/container/src",
+      "projectType": "library",
+      "prefix": "glass",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/container/src/test.ts",
+            "tsConfig": "libs/container/tsconfig.spec.json",
+            "karmaConfig": "libs/container/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/container/tsconfig.lib.json",
+              "libs/container/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -27,6 +27,9 @@
       ],
       "@glass/material": [
         "libs/material/src/index.ts"
+      ],
+      "@glass/container": [
+        "libs/container/src/index.ts"
       ]
     }
   },
