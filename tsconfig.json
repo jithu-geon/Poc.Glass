@@ -16,6 +16,18 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@glass/widget": [
+        "libs/widget/src/index.ts"
+      ],
+      "@glass/charts": [
+        "libs/charts/src/index.ts"
+      ],
+      "@glass/layout": [
+        "libs/layout/src/index.ts"
+      ],
+      "@glass/material": [
+        "libs/material/src/index.ts"
+      ]
     }
   },
   "exclude": [
